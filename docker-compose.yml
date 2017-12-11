@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: "nginx"
+    ports:
+     - "80:80"
+  redis:
+    image: "postgres"
+    ports: 
+    -  "5432:5432"
+# adding network    
+#    networks:
+#    - "{{ docker_network_name }}"
